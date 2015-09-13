@@ -64,11 +64,12 @@ plot(
   ylab = "Energy sub metering"
 )
 
-# set up the legend
+# set up the legend; slight diff from prior: no legend border
 legend(
   "topright",
   legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
   lwd = 1,
+  bty = "n",
   col = c("black", "red", "blue")
 )
 
