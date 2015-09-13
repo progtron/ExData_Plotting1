@@ -31,8 +31,8 @@ data3$DT <- as.POSIXct(
 # save plot to plot3.png (in working dir)
 png(filename = "plot3.png", width = 480, height = 480)
 
-# set display layout & squeeze margins for max. plot area
-par(mfrow = c(1,1), mar = c(2, 4, 0, 0))
+# set layout, background; squeeze margins for max. plot area
+par(mfrow = c(1,1), mar = c(2, 4, 0, 0), bg = "transparent")
 
 # initialize the empty plot with Sub_metering_1 data
 plot(

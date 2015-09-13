@@ -31,8 +31,8 @@ data2$DT <- as.POSIXct(
 # save plot to plot2.png (in working dir)
 png(filename = "plot2.png", width = 480, height = 480)
 
-# set display layout & squeeze margins for max. plot area
-par(mfrow = c(1,1), mar = c(2, 4, 0, 0))
+# set layout, background; squeeze margins for max. plot area
+par(mfrow = c(1,1), mar = c(2, 4, 0, 0), bg = "transparent")
 
 # plot Global_active_power against DT, with specified labeling
 plot(

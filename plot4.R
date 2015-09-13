@@ -33,8 +33,8 @@ data4$DT <- as.POSIXct(
 # save plot to plot4.png (in working dir)
 png(filename = "plot4.png", width = 480, height = 480)
 
-# initialize display layout
-par(mfrow = c(2,2))
+# set layout, background
+par(mfrow = c(2,2), bg = "transparent")
 
 # 1. Global_active_power against DT
 plot(
