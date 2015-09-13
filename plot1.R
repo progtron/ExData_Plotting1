@@ -22,8 +22,8 @@ data1 <- subset(
 # plot the histogram to plot1.png (in working dir)
 png(filename = "plot1.png", width = 480, height = 480)
 
-# initialize display layout
-par(mfrow = c(1,1))
+# set display layout & squeeze margins for max. plot area
+par(mfrow = c(1,1), mar = c(4, 4, 2, 0))
 
 hist(
   data1$Global_active_power,
